@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 /* Reset */
  * {outline:0 !important;}
@@ -19,7 +19,6 @@ hr{display:none;}
 main,header,section,nav,footer,aside,article,figure{display:block;}
 a{color:#000;text-decoration:none;}
  
-
 
 
 /* Form */
