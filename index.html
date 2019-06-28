@@ -11,6 +11,10 @@
 	<link rel="stylesheet" type="text/css" href="css/default.css">
 	<link rel="stylesheet" type="text/css" href="css/style2.css">
 	<link rel="stylesheet" type="text/css" href="css/index2.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"></script>
+
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;subset=korean" rel="stylesheet">
@@ -19,6 +23,7 @@
 
 <body>
 	<div id="wrap">
+
 	<!-- 헤더영역 -->
 	<header id="header" class="index">
 		<h1><a href="#a"><img src="images/top_logo.png" alt="BSN"></a></h1>
@@ -71,7 +76,28 @@
 		<li><a href="#a" style="color:#fff">LOGIN</a></li>
 		<li><a href="#a" style="color:#fff">JOIN</a></li>
 		</ul>
-		<div class="visual"></div>
+		
+		<!-- Slider main container -->
+		<div class="swiper-container">
+		    <!-- Additional required wrapper -->
+		    <div class="swiper-wrapper">
+		        <!-- Slides -->
+		        <div class="swiper-slide"><div class="visual"></div></div>
+		        <div class="swiper-slide"><div class="visual"></div></div>
+		        <div class="swiper-slide"><div class="visual"></div></div>
+		        ...
+		    </div>
+		    <!-- If we need pagination -->
+		    <div class="swiper-pagination"></div>
+
+		    <!-- If we need navigation buttons -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
+
+		    <!-- If we need scrollbar -->
+		    <div class="swiper-scrollbar"></div>
+		</div>
+		<!-- <div class="visual"></div> -->
 	</header>
 	<!-- 헤더영역 끝 -->
 	
@@ -373,5 +399,18 @@
 		</div>
 	</footer>
 	</div>
+
+	<script src="js/swiper.js"></script>
+
+	<!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
 </body>
 </html>
